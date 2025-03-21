@@ -33,13 +33,16 @@ public class DelegationSortedIntListTest {
         list1.add(4);
         list1.add(2);
         assertEquals(5, list1.getTotalAdded());
+        list1.remove(1);
+        list1.remove(3);
+        assertEquals(5,list1.getTotalAdded());
 
         list2.add(3);
         list2.add(0);
         assertEquals(2, list2.getTotalAdded());
 
         list2.addAll(list1);
-        assertEquals(7, list2.getTotalAdded());
+        assertEquals(5, list2.getTotalAdded());
     }
 
     private void printList(IntegerList list) {

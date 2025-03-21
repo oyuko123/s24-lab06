@@ -28,4 +28,5 @@ public class InheritanceSortedIntList extends SortedIntList {
     public int getTotalAdded() {
         return totalAdded;
     }
+
 }
